@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_image_text" inherit_id="website.s_image_text">
+    <!-- Section classes for a classy dog theme -->
+    <xpath expr="//section" position="attributes">
+        <attribute name="class" add="o_cc o_cc2 pb64 pt64" remove="pb80 pt80" separator=" "/>
+        <attribute name="data-oe-shape-data">{"shape":"web_editor/Floats/13","flip":["x"]}</attribute>
+    </xpath>
+
+    <!-- Dog-themed Title -->
+    <xpath expr="//h2" position="replace">
+        <h2 class="h3-fs">Discover the <strong>Joy of Dogs</strong></h2>
+    </xpath>
+    <!-- Stylish separator below title -->
+    <xpath expr="//h2" position="after">
+        <div class="s_hr pb32 pt8" data-snippet="s_hr" data-name="Separator">
+            <hr class="w-50 me-auto" style="border-top: 4px dotted var(--o-color-2) !important;"/>
+        </div>
+    </xpath>
+
+    <!-- Dog-themed paragraphs -->
+    <xpath expr="//p[1]" position="replace">
+        <p>Our passionate team is dedicated to providing the best care and fun-filled activities for your furry friends. From playful walks to engaging training sessions, we ensure every dog feels loved and at home.</p>
+    </xpath>
+    <xpath expr="//p[2]" position="replace">
+        <p>Let your dog experience a world of tail wags, new friends, and endless adventures in a safe and nurturing environment.</p>
+    </xpath>
+    <xpath expr="//p[3]" position="replace">
+        <p><a href="#" class="btn btn-secondary o_translate_inline">Meet Our Dogs</a></p>
+    </xpath>
+
+    <!-- Dog image with classy style -->
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/theme_furball/static/src/img/snippets/s_image_text.jpg</attribute>
+        <attribute name="class">img img-fluid mx-auto rounded shadow</attribute>
+        <attribute name="alt">Happy dog enjoying activities</attribute>
+    </xpath>
+</template>
+
+</odoo>

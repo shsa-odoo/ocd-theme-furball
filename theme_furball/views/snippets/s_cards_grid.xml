@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_cards_grid" inherit_id="website.s_cards_grid">
+    <!-- Dog-themed section title -->
+    <xpath expr="//h3" position="replace" mode="inner">
+        Why Dogs (and Their Humans) Love Us
+    </xpath>
+    <!-- Card 1 -->
+    <xpath expr="(//h5)[1]" position="replace" mode="inner">
+        Playful Adventures
+    </xpath>
+    <xpath expr="(//p[@class='card-text'])[1]" position="replace" mode="inner">
+        Every day is a new adventure! Our spacious play areas and daily activities keep your dog active, happy, and socialized with their furry friends.
+    </xpath>
+    <xpath expr="(//img)[1]" position="attributes">
+        <attribute name="src">/theme_furball/static/src/img/grid_1.jpg</attribute>
+        <attribute name="alt">Dog enjoying playtime</attribute>
+    </xpath>
+    <!-- Card 2 -->
+    <xpath expr="(//h5)[2]" position="replace" mode="inner">
+        Loving Caregivers
+    </xpath>
+    <xpath expr="(//p[@class='card-text'])[2]" position="replace" mode="inner">
+        Our experienced team treats every dog like family, providing gentle care, attention, and lots of belly rubs throughout the day.
+    </xpath>
+    <xpath expr="(//img)[2]" position="attributes">
+        <attribute name="src">/theme_furball/static/src/img/grid_3.jpg</attribute>
+        <attribute name="alt">Dog being cared for</attribute>
+    </xpath>
+    <!-- Card 3 -->
+    <xpath expr="(//h5)[3]" position="replace" mode="inner">
+        Healthy and Safe Environment
+    </xpath>
+    <xpath expr="(//p[@class='card-text'])[3]" position="replace" mode="inner">
+        Clean, secure, and designed for canine comfort—our facilities ensure your dog’s health and safety are always our top priority.
+    </xpath>
+    <xpath expr="(//img)[3]" position="attributes">
+        <attribute name="src">/theme_furball/static/src/img/grid_3.jpg</attribute>
+        <attribute name="alt">Dog in a safe environment</attribute>
+    </xpath>
+    <!-- Card 4 -->
+    <xpath expr="(//h5)[4]" position="replace" mode="inner">
+        Tailored Experiences
+    </xpath>
+    <xpath expr="(//p[@class='card-text'])[4]" position="replace" mode="inner">
+        From puppy playdates to senior strolls, we personalize activities and care to fit your dog’s unique personality and needs.
+    </xpath>
+    <xpath expr="(//img)[4]" position="attributes">
+        <attribute name="src">/theme_furball/static/src/img/grid_4.jpg</attribute>
+        <attribute name="alt">Dog enjoying a custom experience</attribute>
+    </xpath>
+</template>
+
+</odoo>

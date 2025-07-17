@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="s_sidegrid" inherit_id="website.s_sidegrid">
+    <!-- Title -->
+    <xpath expr="//h1" position="replace" mode="inner">
+        <h1>Unleash Happiness for Your Best Friend!</h1>
+        <p>
+            Dogs are more than just pets—they are loyal companions who bring joy, comfort, and unconditional love into our lives. Their playful nature and affectionate presence can brighten even the toughest days. Building a strong bond with your dog not only enhances their well-being but also enriches your own life, creating lasting memories and a true sense of companionship.
+        </p>
+    </xpath>
+
+    <xpath expr="//img" position="attributes">
+        <attribute name="src">/theme_furball/static/src/img/background/sidegrid3.jpg</attribute>
+    </xpath>
+    <xpath expr="(//img)[2]" position="attributes">
+        <attribute name="src">/theme_furball/static/src/img/background/sidegrid1.jpg</attribute>
+    </xpath>
+
+    <xpath expr="(//img)[3]" position="attributes">
+        <attribute name="src">/theme_furball/static/src/img/background/sidegrid2.jpg</attribute>
+    </xpath>
+
+</template>
+
+</odoo>
