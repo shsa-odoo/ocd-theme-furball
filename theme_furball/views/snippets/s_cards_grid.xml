@@ -25,7 +25,7 @@
         Our experienced team treats every dog like family, providing gentle care, attention, and lots of belly rubs throughout the day.
     </xpath>
     <xpath expr="(//img)[2]" position="attributes">
-        <attribute name="src">/theme_furball/static/src/img/grid_3.jpg</attribute>
+        <attribute name="src">/theme_furball/static/src/img/grid_2.jpg</attribute>
         <attribute name="alt">Dog being cared for</attribute>
     </xpath>
     <!-- Card 3 -->
