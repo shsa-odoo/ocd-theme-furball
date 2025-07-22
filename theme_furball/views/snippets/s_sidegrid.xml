@@ -21,6 +21,8 @@
         <attribute name="src">/theme_furball/static/src/img/background/sidegrid2.jpg</attribute>
     </xpath>
 
+    <xpath expr="(//img)[4]" position="replace"/>
+
 </template>
 
 </odoo>

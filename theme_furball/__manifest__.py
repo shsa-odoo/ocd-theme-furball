@@ -18,10 +18,21 @@
         "views/footer.xml",
         "views/header.xml",
     ],
-
+    "configurator_snippets": {
+        "homepage": ["s_banner", "s_sidegrid", "s_cards_grid"],
+    },
+    "assets": {
+        "web._assets_primary_variables": [
+            "theme_furball/static/src/scss/primary_variables.scss",
+        ],
+        "web.assets_frontend": [
+            "theme_furball/static/fonts/*",
+            "theme_furball/static/src/scss/font.scss",
+        ],
+    },
     "images": [
-        "static/description/furball_screenshot.jpg",
         "static/description/furball_description.jpg",
+        "static/description/furball_screenshot.jpg",
     ],
     "images_preview_theme": {
         "website.s_default_banner_image": "/theme_furball/static/src/img/snippets/s_banner.jpg",
@@ -34,18 +45,6 @@
         "webiste.s_key_images_default_image_2": "/theme_furball/static/src/img/snippets/grid_2.jpg",
         "webiste.s_key_images_default_image_3": "/theme_furball/static/src/img/snippets/grid_3.jpg",
         "webiste.s_key_images_default_image_4": "/theme_furball/static/src/img/snippets/grid_4.jpg",
-    },
-    "configurator_snippets": {
-        "homepage": ["s_banner", "s_image_gallery", "s_cards_grid"],
-    },
-    "assets": {
-        "web._assets_primary_variables": [
-            "theme_furball/static/src/scss/primary_variables.scss",
-        ],
-        "web.assets_frontend": [
-            "theme_furball/static/fonts/*",
-            "theme_furball/static/src/scss/font.scss",
-        ],
     },
     "license": "LGPL-3",
 }

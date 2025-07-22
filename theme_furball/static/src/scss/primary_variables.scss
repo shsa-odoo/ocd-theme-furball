@@ -142,6 +142,15 @@ $o-theme-font-configs: (
         'family': ('Montserrat', sans-serif),  // font update - Proxima -> Montserrat
         'url': 'Montserrat:300,300i,400,400i,600,600i',
     ),
+    'Oxygen-Regular': (
+        'family': ('Oxygen-Regular', sans-serif),
+        'url': 'Oxygen:300,300i,400,400i,600,600i',
+        'properties': (
+            'base': (
+                'font-size-base': 1rem,
+            ),
+        ),
+    ),
 );
 
 // Headings
@@ -176,9 +185,9 @@ $o-color-palettes: map-merge($o-color-palettes,
         'theme-furball-1': (
             'o-color-1': #b48a78, // Warm Tan (dog fur, friendly)
             'o-color-2': #e9cba7, // Soft Cream (dog fur, light)
-            'o-color-3': #7c5c3e, // Rich Brown (dog nose/eyes)
+            'o-color-3': #cabaab, // Rich Brown (dog nose/eyes)
             'o-color-4': #f6eee3, // Light Sand (background, gentle)
-            'o-color-5': #fffaf6, // Off-White (clean, neutral)
+            'o-color-5': #5e5c5c, // Off-White (clean, neutral)
         ),
         'theme-furball-2': (
             'o-color-1': #a67c52, // Golden Brown (retriever fur)

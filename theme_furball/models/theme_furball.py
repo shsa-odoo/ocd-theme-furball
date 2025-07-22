@@ -4,6 +4,20 @@ class ThemeFurball(models.AbstractModel):
 
     _inherit = 'theme.utils'
 
+    # example of how to override the header and footer templates to add custom ones
+
+    @property
+    def _header_template(self):
+        return ['theme_furball.custom_header'] + super()._header_template
+
+    @property
+    def _footer_template(self):
+        return ['theme_furball.custom_footer'] + super()._footer_template
+
+    def _theme_furball_post_copy(self, mod):
+        self.enable_view('theme_furball.custom_header')
+        self.enable_view('theme_furball.custom_footer')
+
     # def _theme_furball_post_copy(self, mod):
     # #     # these are available views for headers and footer:
     # #     ##
@@ -28,21 +42,3 @@ class ThemeFurball(models.AbstractModel):
 
     #     self.enable_view('website.template_footer_links')
 
-
-
-
-
-
-    # example of how to override the header and footer templates to add custom ones
-
-    @property
-    def _header_template(self):
-        return ['theme_furball.custom_header'] + super()._header_template
-
-    @property
-    def _footer_template(self):
-        return ['theme_furball.custom_footer'] + super()._footer_template
-
-    def _theme_furball_post_copy(self, mod):
-        self.enable_view('theme_furball.custom_header')
-        self.enable_view('theme_furball.custom_footer')
